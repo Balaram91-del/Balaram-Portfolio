@@ -20,13 +20,13 @@
     <nav>
       <a href="#" class="logo"><h1>Balaram <span>Dora</span></h1></a>
       <ul class="menu">
-        <a href="">HOME</a>
-        <a href="">PROJECTS</a>
-        <a href="">SKILLS</a>
-        <a href="">CONTACT</a>
+        <a href="#Home">HOME</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#contact">CONTACT</a>
       </ul>
     </nav>
-    <section class="hero-section">
+    <section class="hero-section" id="Home">
       <h1>
         Hello <br>
         I am <span>Balaram Dora,</span> a web developer
@@ -35,15 +35,16 @@
           seamless design with functionality.
       </h3>
       <div class="hero-btn-holder">
-        <a href="" class="view-cv-btn">View CV</a>
-        <a href="" class="contact-me-btn">Contact Me</a>
+        <a href="https://drive.google.com/file/d/12RXe0SLpV-oFn3mEutIZOWrz3iL3QUiw/view?usp=drive_link" class="view-cv-btn">View CV</a>
+        <a href="#contact" class="contact-me-btn">Contact Me</a>
       </div>
       <div class="scroll-down-holder">
         <!-- <i class="ri-scroll-to-bottom-line"></i> -->
         <div class="mouse"></div>
       </div>
     </section>
-    <section class="projects-section">
+
+    <section class="projects-section" id="projects">
       <h1>My Projects</h1>
       <div class="card-holder">
 
@@ -52,7 +53,7 @@
           <div class="card-content">
             <h2>Carbon Footprint Calculater & <br>Reduction</h2>
             <!-- <a href=""><i class="ri-github-fill"></i></a> -->
-            <p>A web-based application that calculates carbon footprint of individuals and provides suggestions on hwo to reduce it</p>
+            <p>A web-based application that calculates carbon footprint of individuals and provides suggestions on how to reduce it</p>
             <div class="tech-stack">
               <div class="tech-stack-content">
                 <i class="ri-vuejs-fill"></i>
@@ -145,7 +146,7 @@
       </div>
     </section>
 
-    <section class="skills-section">
+    <section class="skills-section" id="skills">
       <h1>Technical Skills</h1>
       <div class="skills-holder">
         <ul>
@@ -182,6 +183,47 @@
         </ul>
       </div>
     </section>
+
+    <section class="contact-section" id="contact">
+      <h3>CONTACT</h3>
+      <h1>Contact With Me</h1>
+      <div class="contact-container">
+        <div class="left-contact-section">
+          <img src="images\hand-shake.webp" alt="">
+          <h1>Balaram Dora</h1>
+          <p>Softwar Developer</p>
+          <p>I am available for work. You can either connect with me or call me</p>
+          <p>Phone: +917328810701 <br>
+          Email: balaramdora1874@gmail.com</p>
+          <p>FIND ME ON</p>
+          <div class="contact-links">
+            <a href=""><i class="ri-linkedin-box-fill"></i></a>
+            <a href=""><i class="ri-github-fill"></i></a>
+            <a href=""><i class="ri-twitter-x-fill"></i></a>
+          </div>
+        </div>
+        <div class="right-contact-section">
+          <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" class="contact-form">
+
+            <input type="hidden" name="access_key" value="329f9404-79e1-43c5-aedc-fa33b51198c9">
+
+            <label for="name">NAME</label>
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <label for="subject">SUBJECT</label>
+            <input type="text" name="subject" placeholder="Topic" class="contact-inputs" required>
+            <label for="message">MESSAGE</label>
+            <textarea name="message" id="" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">SEND MESSAGE <i class="ri-arrow-right-fill"></i></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      
+    </footer>
 
   </body>
 </html>
