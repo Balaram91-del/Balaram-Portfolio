@@ -6,6 +6,23 @@ Argento: #d4c9c2
 Marshmallow: #f1ede3
 Spiced: #c26c55
 Orange Soda: #f55836 */
+html{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px; /* or any width you want */
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #f55937;
+  border-radius: 10px; /* optional for rounded look */
+}
+
+
+
 
 @font-face {
   font-family: 'Rostex-regular';
@@ -202,6 +219,7 @@ nav a{
   color: var(--text-color);
   font-family: 'Oswald';
   font-size: 2.5rem;
+  /* font-weight: 200; */
 }
 
 .card-holder{
@@ -219,7 +237,7 @@ nav a{
   justify-content: center;
   align-items: center;
   width: 400px;
-  height: 400px;
+  height: 500px;
   box-shadow: 5px 5px 15px #bcc3cf, -5px -5px 15px #ffffff;
   border-radius: 10px;
   text-align: center;
@@ -240,7 +258,12 @@ nav a{
 
 .card-content h2, .card-content p{
   color: var(--text-color);
+  font-family: 'Raleway';
 }
+
+/* .card-content p{
+  font-size: 10px;
+} */
 
 .card-content a{
   text-decoration: none;
@@ -262,16 +285,38 @@ nav a{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 20%;
+  width: 22%;
   background-color: #f55937;
-  border-radius: 20px;
+  border-radius: 10px;
   color: var(--bg-color);
-  padding: 0 15px;
-  margin: 0 10px;
+  padding: 0 10px;
+  margin: 0 5px;
 }
 
 .tech-stack-content p{
   color: var(--bg-color);
+}
+
+.link-container{
+  display: flex;
+  margin-top: 10px;
+}
+
+.link-container a{
+  text-decoration: none;
+  color: var(--text-color);
+  box-shadow: 5px 5px 15px #bcc3cf, -5px -5px 15px #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  background-color: var(--bg-color);
+}
+
+.link-container a:hover{
+  background-color: #f55937;
+  color: var(--bg-color);
+  cursor: pointer;
 }
 
 .skills-section{
@@ -287,6 +332,11 @@ nav a{
   color: var(--text-color);
   font-family: 'Oswald';
   font-size: 2.5rem;
+}
+
+.skills-section h3{
+  font-family: 'Raleway';
+  color: var(--text-color);
 }
 
 .skills-holder{
@@ -322,6 +372,17 @@ nav a{
   width: 70%;
 }
 
+.contact-section h3{
+  font-family: 'Oswald';
+  color: #f55937;
+}
+
+.contact-section h1{
+  font-family: 'Oswald';
+  color: var(--text-color);
+  font-size: 2.5rem;
+}
+
 .contact-section h1{
   margin-top: 0;
 }
@@ -352,10 +413,16 @@ nav a{
 
 .left-contact-section h1{
   margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.left-contact-section p{
+  font-family: 'Raleway';
+  margin-bottom: 0;
 }
 
 .contact-links{
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .left-contact-section a{
@@ -395,9 +462,13 @@ nav a{
   width: 100%;
 }
 
+.contact-form label{
+  font-family: 'Raleway';
+}
+
 .contact-inputs{
   height: 2rem;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 100%;
   border: none;
 }
@@ -429,6 +500,7 @@ nav a{
 footer{
   height: 20vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
